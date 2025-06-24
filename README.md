@@ -1,1 +1,5 @@
-# phase_1_project
+# Project Name 
+## Description
+## Learning Goals
+## Technologies used
+### Prerequisites
