@@ -54,7 +54,7 @@ header h1, header h2 {
 }
 
 /* Each car type block */
-.car-types-container > div{
+.car-types-container{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
