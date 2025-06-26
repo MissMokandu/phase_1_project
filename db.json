@@ -1,0 +1,34 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Sedan",
+      "description": "A comfortable city car for smooth roads.",
+      "image": "https://example.com/sedan.jpg"
+    },
+    {
+      "id": 2,
+      "name": "SUV",
+      "description": "Strong and tall, perfect for families and long trips.",
+      "image": "https://example.com/suv.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Convertible",
+      "description": "A car with a folding roof — stylish and fun!",
+      "image": "https://example.com/convertible.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Hatchback",
+      "description": "Compact and fuel-efficient — great for cities.",
+      "image": "https://example.com/hatchback.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Pickup Truck",
+      "description": "Ideal for hauling and off-road driving.",
+      "image": "https://example.com/pickup.jpg"
+    }
+  ]
+}
