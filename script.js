@@ -1,10 +1,35 @@
 const carTypeContainer = document.querySelector(".car-types-container");
 const loadingMessage = document.getElementById("loading-message");
+const carSearchInput = document.getElementById("car-search");
 const API_URL = "http://localhost:3001/cars";
+
+
+let allCars =[];
+
+function handleCarMouseOut(event) {
+  const hoveredCarDiv = event.currentTarget;
+  hoveredCarDiv.style.border = '1px solid #ddd';
+  const filteredCars = allCars.filter(car => {
+    return car.name.toLowerCase().includes(searchTerm) ||
+      car.description.toLowerCase().includes(searchTerm);
+  });
+  carTypeContainer.innerHTML = '';
+    if (filteredCars.length === 0) {
+        carTypesContainer.innerHTML = '<p style="text-align: center; margin-top: 20px;">No cars match your search.</p>';
+    } else {
+        filteredCars.forEach(car => {
+         renderCar(car);
+     })
+    }
+}
 
 function renderCar(car) {
   const carTypeDiv = document.createElement("div");
   carTypeDiv.classList.add("car-type-item");
+  carTypeDiv.addEventListener(`click`, handleCarClick);
+  carTypeDiv.addEventListener(`mouseover`, handleCarMouseOver);
+  carTypeDiv.addEventListener(`mouseout`, handleCarMouseOut);
+
   carTypeDiv.innerHTML = `
    <div>
      <h5 id="${car.id}">${car.name}</h5>
@@ -44,6 +69,7 @@ async function fetchAndRenderCars() {
       }
 
      const cars = await response.json();
+     allCars = cars;
 
      cars.forEach(car => renderCar(car));
 
@@ -52,4 +78,6 @@ async function fetchAndRenderCars() {
     loadingMessage.textContent = `Failed to load, please try again later`;
     }
 }
-document.addEventListener(`DOMContentLoaded`, fetchAndRenderCars);
+document.addEventListener(`DOMContentLoaded`, () => {fetchAndRenderCars();
+carSerachInput.addEventListener (`input`, handleSearchInput);
+});
