@@ -3,32 +3,67 @@
     {
       "id": 1,
       "name": "Sedan",
-      "description": "A comfortable city car for smooth roads.",
-      "image": "https://example.com/sedan.jpg"
+      "description": "Comfortably sleek and great for city use",
+      "image": "https://images.unsplash.com/photo-1682408138321-ad9517ec3636?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNlZGFufGVufDB8fDB8fHww",
+      "key_aspects": [
+      "Comfortable ride – especially for city and highway driving",
+      "Fuel efficiency – better than SUVs or trucks",
+      "Good trunk space – for everyday items or luggage",
+      "Lower center of gravity – provides better handling and stability"
+    ],
+    "pros_cons": {
+      "pros": "Fuel-efficient, comfortable, affordable",
+      "cons": "Low ground clearance, not ideal for rough roads"
+    }
     },
     {
       "id": 2,
       "name": "SUV",
-      "description": "Strong and tall, perfect for families and long trips.",
-      "image": "https://example.com/suv.jpg"
+      "description": "Spacious and versatile, ideal for family trips and rough roads",
+      "image": "https://media.istockphoto.com/id/2166682716/photo/modern-suv-parked-in-garage.webp?a=1&b=1&s=612x612&w=0&k=20&c=JNQ3lwFcxwFo6Ke8Of0Cu40eFeIIKREGm4GROoYWsNM=",
+      "key_aspects": [
+      "High ground clearance – handles bumps and uneven roads",
+      "Ample cargo and passenger space – perfect for families",
+      "Powerful engine – suitable for towing or adventure",
+      "Available in 4WD – great for off-road driving"
+    ],
+    "pros_cons": {
+      "pros": "Spacious, powerful, family-friendly",
+      "cons": "Less fuel-efficient, harder to park in cities"
+    }
     },
+    
     {
       "id": 3,
-      "name": "Convertible",
-      "description": "A car with a folding roof — stylish and fun!",
-      "image": "https://example.com/convertible.jpg"
+      "name": "Hatchback",
+      "description": "Compact and practical for urban use",
+      "image": "https://media.istockphoto.com/id/494522913/photo/downtown-parked-car.webp?a=1&b=1&s=612x612&w=0&k=20&c=VuOL3f4-rVSg7mZTNJNl_5v3_icsMw9c5tWuiBxTPhk=",
+      "key_aspects": [
+      "Easy to maneuver – great for tight parking spaces",
+      "Rear hatch opens wide – more loading convenience",
+      "Affordable – good choice for first-time buyers",
+      "Foldable back seats – expands storage space"
+    ],
+    "pros_cons": {
+      "pros": "Fuel-efficient, affordable, city-friendly",
+      "cons": "Less space than SUVs, limited rear-seat room"
+    }
     },
     {
       "id": 4,
-      "name": "Hatchback",
-      "description": "Compact and fuel-efficient — great for cities.",
-      "image": "https://example.com/hatchback.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Pickup Truck",
-      "description": "Ideal for hauling and off-road driving.",
-      "image": "https://example.com/pickup.jpg"
+      "name": "Electric car",
+      "description": "Silent, smart, and sustainable — a modern driving experience.",
+      "image": "https://plus.unsplash.com/premium_photo-1714672716183-a24d36dc9169?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGVsZWN0cmljJTIwY2FyfGVufDB8fDB8fHww",
+      "key_aspects": [
+       "Zero emissions – eco-friendly and clean",
+       "Low running costs – no fuel, fewer moving parts",
+       "High-tech features – often comes with smart systems",
+       "Instant torque – fast acceleration"
+    ],
+    "pros_cons": {
+      "pros": "Eco-conscious, smooth, affordable to run",
+      "cons": "Charging stations may be limited, higher initial cost"
+    }
     }
   ]
 }
