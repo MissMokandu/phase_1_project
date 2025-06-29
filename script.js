@@ -38,7 +38,7 @@ function renderCar(car) {
      <ul>
       ${car.key_aspects.map(aspect => `<li>${aspect}</li>`).join('')}
      </ul>
-     <table>
+     <tables>
        <thead>
           <tr>
             <th>Car Type</th>
@@ -53,7 +53,7 @@ function renderCar(car) {
             <td>${car.pros_cons.cons}</td>
          </tr>
         </tbody>
-     </table>
+     </tables>
     </div>`;
 carTypeContainer.append(carTypeDiv);
 }
